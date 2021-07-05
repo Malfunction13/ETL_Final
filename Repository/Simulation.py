@@ -5,7 +5,7 @@ from random import randint, randrange, choice, uniform
 class Simulation:
 
     def generate_random_ts(self):
-        start_date = datetime.datetime(1969, 1, 1, 00, 00, 00, 000000)
+        start_date = datetime.datetime(1970, 1, 1, 00, 00, 00, 000000)
         tz = randint(0, 12)
         east_west = choice(["+", "-"])
         random_ts = start_date + datetime.timedelta(days=randint(0, 99999),
